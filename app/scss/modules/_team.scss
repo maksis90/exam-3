@@ -1,0 +1,76 @@
+.team {
+    text-align: center;
+
+  &__main {
+    padding: 50px 0;
+  }
+
+  &__title {
+    font: 600 2rem $font-s;
+    text-transform: uppercase;
+    color: $grey;
+    padding-top: 30px;
+  }
+
+}
+
+.slider {
+  position: relative;
+
+  &__item {
+    margin: 10rem 1rem 0;
+    background: $white;
+    position: relative;
+
+  }
+
+  &__title {
+    padding-top: 11rem;
+    font: 700 2rem $font-b;
+    color: $purple;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font: italic 1.5rem $font;
+    padding-bottom: 50px;
+    color: $grey;
+  }
+
+
+  &__img {
+    @include pos($l:10%, $t:-35%);
+    border-radius: 50%;
+    border: 15px solid #ebebeb;
+  }
+
+  &__social {
+    background: $purple;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    .social__link {
+      cursor: pointer;
+    }
+  }
+
+  &__links {
+    margin: 20px 12px;
+  }
+
+
+
+  .next{
+    @include pos($l:-10%, $t:50%);
+    transform: rotate(180deg);
+
+  }
+  .prev {
+    @include pos($r:-10%, $t:50%);
+  }
+}
+
+
+

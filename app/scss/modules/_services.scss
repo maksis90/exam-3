@@ -1,0 +1,43 @@
+.services {
+  text-align: center;
+  color: $grey;
+
+  &__item {
+    padding-top: 100px;
+    height: 400px;
+
+  &--grey {
+    background: #dbdbdb;
+  }
+
+  &--big {
+    background: rgba(154, 159, 207, .5) url("../images/tile.jpg") center no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100%;
+    }
+
+  }
+
+  &__title {
+    padding-top: 25px;
+    margin-bottom: 15px;
+    font: 700 1.5rem $font;
+
+    &--white {
+      font: 600 2rem $font-s;
+      padding-bottom: 90px;
+    }
+
+  }
+
+  &__text {
+    font: italic 1rem $font;
+  }
+
+  &__white {
+    color: $white;
+  }
+
+
+}

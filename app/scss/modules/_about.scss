@@ -1,0 +1,64 @@
+.about {
+
+  &__main {
+    padding-top: 125px;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+
+  &__text-wrap {
+    padding: 4.2rem 0 5.3rem;
+  }
+
+
+  &__text {
+    font: 400 1.1rem $font;
+    margin-bottom: 30px;
+    color: $grey;
+    text-align: left;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__wrap {
+    @include pos($l:0, $t:0);
+    @include size(380px, 555px);
+    background: rgba(156, 154, 207, .5);
+    padding-top: 75px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $white;
+    padding-top: 2.5rem;
+    font: 2rem $font-s;
+  }
+
+  &__link {
+    text-decoration: none;
+    border: 1px solid $grey;
+    color: $grey;
+    font: italic 1.1rem $font;
+    cursor: pointer;
+    padding: 1rem 3rem;
+
+    &:hover {
+      background: $grey;
+      color: $white;
+      text-decoration: none;
+      border-color: $purple;
+    }
+
+
+
+  }
+
+
+
+}
